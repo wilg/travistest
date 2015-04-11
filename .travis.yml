@@ -4,4 +4,4 @@ env:
   - JOB=bundle exec ruby -e "puts 'bar';exit 0"
   - JOB=bundle exec ruby -e "puts 'baz';exit 1"
 script:
-  - ./$JOB
+  - bundle exec $JOB
