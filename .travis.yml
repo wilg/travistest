@@ -1,7 +1,7 @@
 language: ruby
 env:
-  - JOB="ruby -e \"puts 'foo';exit 1\""
-  - JOB="ruby -e \"puts 'bar';exit 0\""
-  - JOB="ruby -e \"puts 'baz';exit 1\""
+  - JOB=echo bar
+  - JOB=echo bar
+  - JOB=echo bar
 script:
   - bundle exec $JOB
