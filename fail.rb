@@ -1,1 +1,12 @@
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
+puts "WHAT"
 exit 1
