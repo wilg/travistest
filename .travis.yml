@@ -1,8 +1,8 @@
 language: ruby
 env:
-- bundle exec rake succeed
-- bundle exec rake fail
-- bundle exec rake succeed
+- JOB=succeed
+- JOB=fail
+- JOB=succeed
 script:
 - bundle exec $JOB
 deploy:
