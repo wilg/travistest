@@ -1,7 +1,14 @@
 language: ruby
 env:
-  - bundle exec rake succeed
-  - bundle exec rake fail
-  - bundle exec rake succeed
+- bundle exec rake succeed
+- bundle exec rake fail
+- bundle exec rake succeed
 script:
-  - bundle exec $JOB
+- bundle exec $JOB
+deploy:
+  provider: heroku
+  api_key:
+    secure: ftKtrrVUtM9LiE1BV1FkCP3Byh/7qfynD8RPnKXZNLIdjIaBzLpxdd2BWW3GwAavj5tD+zu4Gfrv1+0YMxepozBZKYMHV7zePrjtPMqIxSiQHNJLdMO9Hyx3aDGWkE0Ppp4y/PnKc/GwtcaO1hAig5LEtgJm4H2pMENkd8uFUP4=
+  app: travistest-34324
+  on:
+    repo: wilg/travistest
