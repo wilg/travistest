@@ -1,7 +1,7 @@
 language: ruby
 env:
-  - JOB=echo bar
-  - JOB=ruby ./fail.rb
-  - JOB=echo bar
+  - bundle exec rake succeed
+  - bundle exec rake fail
+  - bundle exec rake succeed
 script:
   - bundle exec $JOB
